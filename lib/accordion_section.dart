@@ -134,8 +134,9 @@ class AccordionSection extends StatelessWidget with CommonParams {
 
     Timer(
       sectionCtrl.firstRun
-          ? (listCtrl.initialOpeningSequenceDelay + min(index * 200, 1000))
-              .milliseconds
+          ? Duration(
+              milliseconds:
+                  listCtrl.initialOpeningSequenceDelay + min(index * 200, 1000))
           : 0.seconds,
       () {
         if (Accordion.sectionAnimation) {
@@ -205,11 +206,11 @@ class AccordionSection extends StatelessWidget with CommonParams {
                     listCtrl.controller.cancelAllHighlights();
                     listCtrl.controller.scrollToIndex(index,
                         preferPosition: AutoScrollPosition.middle,
-                        duration:
-                            (scrollIntoViewOfItems == ScrollIntoViewOfItems.fast
-                                    ? .5
-                                    : 1)
-                                .seconds);
+                        duration: Duration(
+                            seconds: scrollIntoViewOfItems ==
+                                    ScrollIntoViewOfItems.fast
+                                ? 30
+                                : 60));
                   },
                 );
               }

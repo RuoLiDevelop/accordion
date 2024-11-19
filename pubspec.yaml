@@ -11,7 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  get: ^4.6.5
+  get: 5.0.0-release-candidate-9.2.1
   scroll_to_index: ^3.0.1
 
 dev_dependencies:
@@ -27,6 +27,5 @@ topics:
   - ui
 
 screenshots:
-  - description: 'Accordion example in action'
+  - description: "Accordion example in action"
     path: example/accordion_demo.gif
-  
