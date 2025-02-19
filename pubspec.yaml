@@ -11,7 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  get: 5.0.0-release-candidate-9.2.1
+  get: 4.7.2
   scroll_to_index: ^3.0.1
 
 dev_dependencies:
